@@ -20,3 +20,22 @@ cc () { wget `wget -q -O - $1  | grep -o "{\"higher.*high" | sed "s/,/\n/g" | gr
 
 alias a='alsamixer'
 alias h='history | grep'
+
+
+----------------------------------------------------------
+
+rc_local
+ 
+sudo iw reg set IE && sudo sed -i 's/^REG.*=$/&IE/' /etc/default/crda
+sudo cron
+sudo iptables -P INPUT ACCEPT
+sudo mount -o remount,rw,exec /dev/sdb1 /media/removable/OUSS2
+
+----------------------------------------------------------------
+.bash_profile
+ 
+bash -i 
+
+
+
+
