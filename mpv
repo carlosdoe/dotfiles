@@ -1,0 +1,54 @@
+profile=opengl-hq 
+
+geometry=500x1000-0-0
+
+loop-file=inf
+
+cache=yes
+
+loop-playlist=inf
+
+osd-bar=no
+
+border=no
+volume-max=200
+
+screenshot-template="%f-%wH.%wM.%wS.%wT-#%#00n"
+
+
+image-display-duration=12
+
+
+#Luma upscale deringing (Higher = Less rining, but more detail loss)
+#scale-antiring=0.7
+
+#Luma downscale deringing (Higher = Less rining, but more detail loss)
+#dscale-antiring=0.7
+
+#Chroma upscale deringing (Higher = Less rining, but more detail loss)
+#cscale-antiring=0.7
+
+deband=yes
+
+#Deband steps (More = Better quality, but higher GPU cost)
+#deband-iterations=4
+
+#Deband strength (More = Less banding, but more detail loss)
+#deband-threshold=48
+
+#Deband range (More = Less banding, but higher GPU cost)
+#deband-range=16
+
+#Dynamic Grain (More = More dynamic grain)
+#Set it to "0" in case you use the static grain shader
+#deband-grain=48
+
+
+
+#scaler
+
+#scale-radius=3.2383154841662362
+#scale-blur=1.0275
+#cscale=ewa_hanning
+#cscale-radius=3.2383154841662362
+#cscale-blur=1.055
