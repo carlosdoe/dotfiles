@@ -1,0 +1,19 @@
+hide-password
+noauth
+connect "/usr/sbin/chat -V -f /etc/ppp/umts.chat"
+debug
+/dev/ttyUSB1
+460800
+
+lcp-echo-interval 9010
+
+defaultroute
+noipdefault
+noccp
+nobsdcomp
+#local
+#user "eplus"
+#password "gprs"
+usepeerdns
+connect-delay 10000
+persist
