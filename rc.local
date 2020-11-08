@@ -1,0 +1,10 @@
+
+
+sudo iw reg set IE && sudo sed -i 's/^REG.*=$/&IE/' /etc/default/crda
+sudo cron
+sudo iptables -P INPUT ACCEPT
+sudo mount -o remount,rw,exec /dev/sdb1 /media/removable/OUSS2
+su -c " /etc/init.d/ssh start"
+
+
+exit 0
