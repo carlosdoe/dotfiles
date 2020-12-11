@@ -132,7 +132,7 @@ alias ipt='sudo iptables -P INPUT ACCEPT'
 alias t=tmux
 export PS1="${debian_chroot:+($debian_chroot)}\u@\h:\$ " 
 
-p() { read p; echo $p | tee /dev/pts/*; }
+p() {  echo $@ | tee /dev/pts/*; }
 cd /media/removable/OUSS2
 alias ..="cd .."
 alias ...="cd ../.."
@@ -143,6 +143,10 @@ alias .....="cd ../../../.."
 alias a='alsamixer'
 alias h='history | grep'
 alias ps='ps -aux | grep'
-alias mpva='mpv --af-clr'
- yta() {     mpv --ytdl-format=bestaudio ytdl://ytsearch30:"$*"; }
+alias mpva='mpv --no-video'
+alias mpvx=' nice -10 mpv --no-config  -af=loudnorm="I=-16:TP=-2:LRA=11" -vo=xv'
+alias mpvn='nice -10 mpv  --no-config'
+ yta() {     mpv --ytdl-format=bestaudio ytdl://ytsearch10:"$*"; }
 
+
+alias m='amixer set Master toggle -q'
